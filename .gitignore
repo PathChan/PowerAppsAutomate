@@ -1,0 +1,6 @@
+.env
+browser_profile/
+browser_use_conversation.json
+__pycache__/
+*.pyc
+mocProcessing_conversation.json/
