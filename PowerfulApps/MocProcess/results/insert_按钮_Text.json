@@ -1,0 +1,33 @@
+{
+  "component": "按钮",
+  "propertyName": "Text",
+  "formula": "\"点我一下就删除\"",
+  "steps": [
+    {
+      "name": "click_ribbon_insert",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "click_insert_menu_item(按钮)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "get_property_options(37 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Text)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(\"点我一下就删除\")",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

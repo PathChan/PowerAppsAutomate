@@ -1,0 +1,22 @@
+{
+  "propertyName": "OnSelect",
+  "formula": "Set(clickCount, Coalesce(clickCount, 0) - 1); Notify(\"已经点我了\" & Text(clickCount) & \"次了\")",
+  "steps": [
+    {
+      "name": "get_property_options(37 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(OnSelect)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(Set(clickCount, Coalesce(clickCount, 0) - 1); Notify(\"已经点我了\" & Text(clickCount) & \"次了\"))",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

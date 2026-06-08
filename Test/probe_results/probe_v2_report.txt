@@ -1,0 +1,37 @@
+======================================================================
+PowerApps DOM Probe v2
+Timestamp: 2026-06-08T14:51:00
+Total frames: 3
+======================================================================
+
+--- Frame Tree ---
+[3479777BFD64] name='' url=https://make.powerapps.com/e/Default-981b0d27-31e4-41e1-8295-46904d1bce63/canvas/
+  [3A36B5BC5E47] name='preloadStudio' url=https://authoring.eu-il103.gateway.prod.island.powerapps.com/embed/
+  [573F0230D8C9] name='EmbeddedStudio' url=https://authoring.eu-il103.gateway.prod.island.powerapps.com/v3.26054.13.371370715/embed/
+
+--- All iframes on main page ---
+
+  iframe #0: name='EmbeddedStudio' id=''
+    src  : https://authoring.eu-il103.gateway.prod.island.powerapps.com/v3.26054.13.371370715/embed/?environment-update-cadence=Frequent&environment-name=Default-981b0d27-31e4-41e1-8295-46904d1bce63&embedcid=451
+    rect : {}
+    visible: True
+
+  iframe #1: name='' id='preloadStudio'
+    src  : https://authoring.eu-il103.gateway.prod.island.powerapps.com/embed/?preload=prefetch
+    rect : {}
+    visible: True
+
+  iframe #2: name='o365shellwcssframe' id='o365shellwcssframe'
+    src  : https://webshell.suite.office.com/iframe/TokenFactoryIframe?origin=https%3A%2F%2Fmake.powerapps.com&shsid=cf34f342-e98a-4490-b754-35b38045f9e2&apiver=oneshell&cshver=1.20260601.1.0&upn=PXNC%40nnit.com
+    rect : {}
+    visible: False
+
+--- #formulaBarContainer on main page ---
+  NOT FOUND
+
+--- Property dropdown candidates (top 20 visible inputs/comboboxes) ---
+
+--- #formulaBarContainer area HTML ---
+  container not found in main page
+  bodyHTML:
+<i tabindex="0" role="none" data-tabster-dummy="" aria-hidden="true" style="position: fixed; height: 1px; width: 1px; opacity: 0.001; z-index: -1; content-visibility: hidden; top: 0px; left: 0px;"></i><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"><div class="fui-FluentProvider fui-FluentProvider1 ___jdtuxv0 f19n0e5 fxugw4r f1o700av fk6fouc fkhj508 figsok6 f1i3iumi" dir="ltr" style="width: 100%; height: 100%; display: flex; flex-direction: column;"><div class="ms-Fabric root-259" style=""><div style="display: block;"><header><div><button type="button" id="PPUXOfficeHeaderSkipButton" class="fui-Button r1alrhcs ___1fey3m9 ffp7eso fm1ebug f28omuz f1ixw5o4 f1uhflii f1phragk f15wkkf3 f1s2uweq fr80ssc f1ukrpxl fecsdlb f1rq72xc fnp9lpt f1h0usnq fs4ktlq f16h9ulv fx2bmrt f1d6v5y2 f1rirnrt f1uu00uk fkvaka8 f1ux7til f9a0qzu f1lkg8j3 fkc42ay fq7113v ff1wgvm fiob0tu f1j6scgf f1x4h75k f4xjyn1 fbgcvur f1ks1yx8 f1o6qegi fcnxywj fmxjhhp f9ddjv3 f17t0x8g f194v5ow f1qgg65p fk7jm04 fhgccpy f32wu9k fu5nqqq f13prjl2 f1czftr5 f1nl83rv f12k37oa fr96u23 f1euv43f f1x512v2 f17mccla f1hc5s0a f9w63p5 f19dex32 fofb5yl f2g6wyn f1clyrq f1qtglxi frh4m48 fzdn2yv f1qzh8od f3nrvd9 f1nm6m1j foawte8 fcuyw9w foh4zcn f8tsue7 fxj9m5c f117ld17 f18qb8ik f62ui1h f1vad4m4 feha077 f1lrltkt f8kud44 f51ii34 f1i5w653 f184hdlm">跳转至主内容</button></div><div id="o365header" class="___kf2z2b0 fly5x3f ff2sm71 f1e8ugpm f10pi13n flo9id0 fvx5rk9 f1w3dx5l fmnvzn1 f1am1y04 fkxpgcn fgsrr17 fyrasp1 fxpqjit"><div id="O365_NavHeader" class="dQ8XLMIyNxl8MAYqMsUZFQ== o365cs-base o365sx-navbar o365sx-search" role="banner" style="height: 48px; line-height: 48px;"><div id="O365_HeaderLeftRegion" class="ieRo/OqPYB7kffRFKx2c9w=="><div class="Bh46b1rd8BrU4zolL9RzUg=="><button id="O365_MainLink_NavMenu" class="clgiLVKPzugZZns0LiPTqw== o365sx-button o365sx-waffle " aria-haspopup="dialog" aria-expanded="false" type="button" role="button" aria-label="应用启动器" title="应用启动器"><span class="ms-Icon--WaffleOffice365 ms-icon-font-size-16" role="presentation" style="display: inline-block; font-size: 16px;"></span></button></div></div><div id="CenterRegion" class="_25CqRVKwE38X5RHExD4IyA==" style="width: calc(100% - 224px);"><div style="width: 100%;"><div><div style="position: relative;"><div data-automation-id="visibleContent" style=""><div id="ppuxOfficeHeaderTopLevelRegion" class="_1QSK5lUhw5Gkh7SDz97ZPQ=="><div id="ppuxOfficeHeaderLeftRegion" class="_1QSK5lUhw5Gkh7SDz97ZPQ==" style="justify-content: flex-start;"><div id="ppuxOfficeHeaderTenant_container" class="M3pcB5evSAtYMozck1WU7A=="><div><div class="_3rJAyyAtPSCl0uoYr+wuLA== o365sx-primary-font"><a id="O365_MainLink_TenantLogo" class="rOy+Hn8kiD5J9v5VDCE3Dg== tP6UdQAxefBu0rqv2chMeg== o365sx-appBrandLink" title="NNITGroup (Corporate)" aria-label="NNITGroup (Corporate)" href="https://m365.cloud.microsoft?auth=2&amp;home=1&amp;from=ShellLogo&amp;username=PXNC@nnit.com&amp;login_hint=PXNC@nnit.com"><img id="O365_MainLink_TenantLogoImg" alt="NNITGroup (Corporate)" title="NNITGroup (Corporate)" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDAiIHpvb21BbmRQYW49Im1hZ25pZnkiIHZpZXdCb3g9IjAgMCAzMCAzMC4wMDAwMDEiIGhlaWdodD0iNDAiIHByZXNlcnZlQXNwZWN0UmF0aW89InhNaWRZTWlkIG1lZXQiIHZlcnNpb249IjEuMCI+PHBhdGggZmlsbD0iIzc4MDAwMCIgZD0iTSA5Ljc5Njg3NSAxNy4zMzIwMzEgTCA5Ljc5Njg3NSAxMy4yNTM5MDYgQyA5Ljc5Njg3NSAxMi4zMDA3ODEgOS43ODEyNSAxMC41NzQyMTkgNi40Mzc1IDEwLjU3NDIxOSBDIDUuMTc1NzgxIDEwLjU3NDIxOSA0LjMxMjUgMTAuODE2NDA2IDMuODQzNzUgMTAuOTY4NzUgQyAzLjI4MTI1IDExLjE0NDUzMSAzLjA5NzY1NiAxMS4zNTU0NjkgMy4wOTc2NTYgMTEuNjMyODEyIEwgMy4wOTc2NTYgMTcuMzU1NDY5IEMgMy4wOTc2NTYgMTcuNjMyODEyIDMuMTc5Njg4IDE3LjY2MDE1NiAzLjQxNDA2MiAxNy42NjAxNTYgTCA0LjIyNjU2MiAxNy42NjAxNTYgQyA0LjQ2MDkzOCAxNy42NjAxNTYgNC41NzgxMjUgMTcuNjI4OTA2IDQuNTc4MTI1IDE3LjMzNTkzOCBMIDQuNTc4MTI1IDEyLjAxNTYyNSBDIDQuNTc4MTI1IDExLjY0MDYyNSA1LjIwNzAzMSAxMS4yODkwNjIgNi4zNzEwOTQgMTEuMjg5MDYyIEMgOC4zMTI1IDExLjI4OTA2MiA4LjMxMjUgMTIuNjcxODc1IDguMzEyNSAxMy40Mzc1IEwgOC4zMTI1IDE3LjMzMjAzMSBDIDguMzEyNSAxNy42MjUgOC40MTQwNjIgMTcuNjYwMTU2IDguNjc5Njg4IDE3LjY2MDE1NiBMIDkuNTkzNzUgMTcuNjYwMTU2IEMgOS43ODEyNSAxNy42MjUgOS43OTY4NzUgMTcuNDgwNDY5IDkuNzk2ODc1IDE3LjMzMjAzMSAiIGZpbGwtb3BhY2l0eT0iMSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZmlsbD0iIzc4MDAwMCIgZD0iTSAxNy42OTUzMTIgMTcuMzMyMDMxIEwgMTcuNjk1MzEyIDEzLjI1MzkwNiBDIDE3LjY5NTMxMiAxMi4zMDA3ODEgMTcuNjc5Njg4IDEwLjU3NDIxOSAxNC4zMzk4NDQgMTAuNTc0MjE5IEMgMTMuMDc0MjE5IDEwLjU3NDIxOSAxMi4yMTA5MzggMTAuODE2NDA2IDExLjc0MjE4OCAxMC45Njg3NSBDIDExLjE3NTc4MSAxMS4xNDQ1MzEgMTEgMTEuMzU1NDY5IDExIDExLjYzMjgxMiBMIDExIDE3LjM1NTQ2OSBDIDExIDE3LjYzMjgxMiAxMS4wNzgxMjUgMTcuNjYwMTU2IDExLjMxMjUgMTcuNjYwMTU2IEwgMTIuMTI1IDE3LjY2MDE1NiBDIDEyLjM1OTM3NSAxNy42NjAxNTYgMTIuNDc2NTYyIDE3LjYyODkwNiAxMi40NzY1NjIgMTcuMzM1OTM4IEwgMTIuNDc2NTYyIDEyLjAxNTYyNSBDIDEyLjQ3NjU2MiAxMS42NDA2MjUgMTMuMTA5Mzc1IDExLjI4OTA2MiAxNC4yNjk1MzEgMTEuMjg5MDYyIEMgMTYuMjEwOTM4IDExLjI4OTA2MiAxNi4yMTA5MzggMTIuNjcxODc1IDE2LjIxMDkz

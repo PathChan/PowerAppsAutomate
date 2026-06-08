@@ -1,4 +1,4 @@
-﻿import asyncio
+import asyncio
 import json
 import logging
 import math
@@ -35,6 +35,7 @@ from mocProcessing.filesystem.file_system import FileSystem
 from mocProcessing.llm.base import BaseChatModel
 from mocProcessing.llm.messages import SystemMessage, UserMessage
 from mocProcessing.observability import observe_debug
+from mocProcessing.tools.powerapps_chain import PowerAppsChainAction, execute_powerapps_chain
 from mocProcessing.tools.registry.service import Registry
 from mocProcessing.tools.utils import get_click_description
 from mocProcessing.tools.views import (
@@ -432,6 +433,13 @@ class Tools(Generic[Context]):
 		"""Register all default browser actions"""
 
 		self._register_done_action(output_model)
+
+		@self.registry.action(
+			'PowerApps 操作链。用于把多个稳定操作打包成一个动作，例如：插入/选择组件 -> 选择属性 -> 聚焦公式编辑器 -> 输入公式。chain 可选 insert_component_set_formula 或 set_current_selection_formula。公式编辑器聚焦会优先使用视觉模型坐标缓存，失败时跳过该步骤。',
+			param_model=PowerAppsChainAction,
+		)
+		async def powerapps_chain(params: PowerAppsChainAction, browser_session: BrowserSession):
+			return await execute_powerapps_chain(params, browser_session)
 
 		# Basic Navigation Actions
 		@self.registry.action(

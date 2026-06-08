@@ -1,0 +1,2429 @@
+{
+  "timestamp": "2026-06-08T16:41:05",
+  "optionsCount": 10,
+  "options": [
+    {
+      "text": "BackgroundImage",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 82,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "ContentLanguage",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 116,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "Fill",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "true",
+      "rect": {
+        "x": 21,
+        "y": 150,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "Height",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 184,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "ImagePosition",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 218,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "LoadingSpinner",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 252,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "LoadingSpinnerColor",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 286,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "OnHidden",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 320,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "OnVisible",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 354,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "Width",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 388,
+        "w": 212,
+        "h": 32
+      }
+    }
+  ],
+  "sidebarTabs": [
+    {
+      "text": "屏幕",
+      "tag": "BUTTON",
+      "role": "tab",
+      "ariaSelected": "true",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 57,
+        "y": 137,
+        "w": 44,
+        "h": 26
+      }
+    },
+    {
+      "text": "组件组件",
+      "tag": "BUTTON",
+      "role": "tab",
+      "ariaSelected": "false",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 101,
+        "y": 137,
+        "w": 44,
+        "h": 26
+      }
+    },
+    {
+      "text": "显示",
+      "tag": "BUTTON",
+      "role": "tab",
+      "ariaSelected": "true",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 2222,
+        "y": 208,
+        "w": 44,
+        "h": 30
+      }
+    },
+    {
+      "text": "高级",
+      "tag": "BUTTON",
+      "role": "tab",
+      "ariaSelected": "false",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 2274,
+        "y": 208,
+        "w": 44,
+        "h": 30
+      }
+    }
+  ],
+  "properties": {
+    "BackgroundImage": {
+      "formulaValue": "BackgroundImage",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "BackgroundImage",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "填充",
+          "ariaLabel": "填充",
+          "role": "",
+          "rect": {
+            "x": 2223,
+            "y": 255,
+            "w": 34,
+            "h": 27
+          }
+        },
+        {
+          "text": "",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2480,
+            "y": 255,
+            "w": 44,
+            "h": 24
+          }
+        },
+        {
+          "text": "背景图像",
+          "ariaLabel": "背景图像",
+          "role": "",
+          "rect": {
+            "x": 2223,
+            "y": 287,
+            "w": 58,
+            "h": 27
+          }
+        },
+        {
+          "text": "无",
+          "ariaLabel": "",
+          "role": "button",
+          "rect": {
+            "x": 2384,
+            "y": 287,
+            "w": 140,
+            "h": 24
+          }
+        },
+        {
+          "text": "图像位置",
+          "ariaLabel": "图像位置",
+          "role": "",
+          "rect": {
+            "x": 2223,
+            "y": 319,
+            "w": 58,
+            "h": 27
+          }
+        },
+        {
+          "text": "匹配度",
+          "ariaLabel": "",
+          "role": "button",
+          "rect": {
+            "x": 2384,
+            "y": 319,
+            "w": 140,
+            "h": 24
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "BackgroundImage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "BackgroundImage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "BackgroundImage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "BackgroundImage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "ContentLanguage": {
+      "formulaValue": "ContentLanguage",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "ContentLanguage",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ContentLanguage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ContentLanguage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ContentLanguage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ContentLanguage",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "Fill": {
+      "formulaValue": "Fill",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "Fill",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Fill",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Fill",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Fill",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Fill",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "Height": {
+      "formulaValue": "Height",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "Height",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Height",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Height",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Height",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Height",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "ImagePosition": {
+      "formulaValue": "ImagePosition",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "ImagePosition",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ImagePosition",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ImagePosition",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ImagePosition",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "ImagePosition",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "LoadingSpinner": {
+      "formulaValue": "LoadingSpinner",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "LoadingSpinner",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinner",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinner",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinner",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinner",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "LoadingSpinnerColor": {
+      "formulaValue": "LoadingSpinnerColor",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "LoadingSpinnerColor",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinnerColor",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinnerColor",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinnerColor",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "LoadingSpinnerColor",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "OnHidden": {
+      "formulaValue": "OnHidden",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "OnHidden",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnHidden",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnHidden",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnHidden",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnHidden",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "OnVisible": {
+      "formulaValue": "OnVisible",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "OnVisible",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnVisible",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnVisible",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnVisible",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "OnVisible",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    },
+    "Width": {
+      "formulaValue": "Width",
+      "panelInputs": [
+        {
+          "placeholder": "",
+          "ariaLabel": "属性",
+          "value": "Width",
+          "dataAutomationId": "",
+          "rect": {
+            "x": 18,
+            "y": 45,
+            "w": 184,
+            "h": 30
+          }
+        }
+      ],
+      "panelLabels": [
+        "填充\n\n视觉对象背景色。",
+        "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+        "背景图像\n\n设置为背景图像的图像文件或 URL。",
+        "图像位置\n\n更改视觉对象中的图像显示方式。"
+      ],
+      "panelButtons": [
+        {
+          "text": "OnHidden",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 336,
+            "w": 66.46875,
+            "h": 28
+          }
+        },
+        {
+          "text": "OnVisible",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 415,
+            "w": 62.4375,
+            "h": 28
+          }
+        },
+        {
+          "text": "BackgroundImage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 533,
+            "w": 108.390625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ContentLanguage",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 612,
+            "w": 106.3125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Fill",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 730,
+            "w": 26.578125,
+            "h": 28
+          }
+        },
+        {
+          "text": "Height",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 809,
+            "w": 47.625,
+            "h": 28
+          }
+        },
+        {
+          "text": "ImagePosition",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 888,
+            "w": 87.078125,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinner",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 967,
+            "w": 94.984375,
+            "h": 28
+          }
+        },
+        {
+          "text": "LoadingSpinnerColor",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1046,
+            "w": 123.5625,
+            "h": 28
+          }
+        },
+        {
+          "text": "Width",
+          "ariaLabel": "",
+          "role": "",
+          "rect": {
+            "x": 2228,
+            "y": 1125,
+            "w": 44.046875,
+            "h": 28
+          }
+        }
+      ],
+      "sidebarTabs": [
+        {
+          "tabText": "屏幕屏幕",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Width",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "组件组件",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Width",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "显示",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Width",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        },
+        {
+          "tabText": "高级",
+          "inputs": [
+            {
+              "placeholder": "",
+              "ariaLabel": "属性",
+              "value": "Width",
+              "dataAutomationId": "",
+              "rect": {
+                "x": 18,
+                "y": 45,
+                "w": 184,
+                "h": 30
+              }
+            }
+          ],
+          "labels": [
+            "填充\n\n视觉对象背景色。",
+            "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+            "背景图像\n\n设置为背景图像的图像文件或 URL。",
+            "图像位置\n\n更改视觉对象中的图像显示方式。"
+          ]
+        }
+      ]
+    }
+  },
+  "errors": []
+}

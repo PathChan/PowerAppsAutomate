@@ -1,0 +1,1130 @@
+{
+  "timestamp": "2026-06-08T16:25:36",
+  "trigger": {},
+  "optionsCount": 10,
+  "options": [
+    {
+      "text": "BackgroundImage",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 82,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "ContentLanguage",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 116,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "Fill",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "true",
+      "rect": {
+        "x": 21,
+        "y": 150,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "Height",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 184,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "ImagePosition",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 218,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "LoadingSpinner",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 252,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "LoadingSpinnerColor",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 286,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "OnHidden",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 320,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "OnVisible",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 354,
+        "w": 212,
+        "h": 32
+      }
+    },
+    {
+      "text": "Width",
+      "tag": "DIV",
+      "role": "option",
+      "selected": "false",
+      "rect": {
+        "x": 21,
+        "y": 388,
+        "w": 212,
+        "h": 32
+      }
+    }
+  ],
+  "properties": {
+    "BackgroundImage": {
+      "optionText": "BackgroundImage",
+      "optionRect": {
+        "x": 21,
+        "y": 82,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "BackgroundImage",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "BackgroundImage",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "ContentLanguage": {
+      "optionText": "ContentLanguage",
+      "optionRect": {
+        "x": 21,
+        "y": 116,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "ContentLanguage",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "ContentLanguage",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "Fill": {
+      "optionText": "Fill",
+      "optionRect": {
+        "x": 21,
+        "y": 150,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "Fill",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "Fill",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "Height": {
+      "optionText": "Height",
+      "optionRect": {
+        "x": 21,
+        "y": 184,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "Height",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "Height",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "ImagePosition": {
+      "optionText": "ImagePosition",
+      "optionRect": {
+        "x": 21,
+        "y": 218,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "ImagePosition",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "ImagePosition",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "LoadingSpinner": {
+      "optionText": "LoadingSpinner",
+      "optionRect": {
+        "x": 21,
+        "y": 252,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "LoadingSpinner",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "LoadingSpinner",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "LoadingSpinnerColor": {
+      "optionText": "LoadingSpinnerColor",
+      "optionRect": {
+        "x": 21,
+        "y": 286,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "LoadingSpinnerColor",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "LoadingSpinnerColor",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "OnHidden": {
+      "optionText": "OnHidden",
+      "optionRect": {
+        "x": 21,
+        "y": 320,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "OnHidden",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "OnHidden",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "OnVisible": {
+      "optionText": "OnVisible",
+      "optionRect": {
+        "x": 21,
+        "y": 354,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "OnVisible",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "OnVisible",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    },
+    "Width": {
+      "optionText": "Width",
+      "optionRect": {
+        "x": 21,
+        "y": 388,
+        "w": 212,
+        "h": 32
+      },
+      "panelData": {
+        "formulaValue": "Width",
+        "propertyInputs": [
+          {
+            "placeholder": "",
+            "ariaLabel": "属性",
+            "value": "Width",
+            "dataAutomationId": "",
+            "rect": {
+              "x": 18,
+              "y": 45,
+              "w": 184,
+              "h": 30
+            }
+          }
+        ],
+        "propertyLabels": [
+          "填充\n\n视觉对象背景色。",
+          "颜色，其中红 = 255、绿 = 255、蓝 = 255、Alpha = 1",
+          "背景图像\n\n设置为背景图像的图像文件或 URL。",
+          "图像位置\n\n更改视觉对象中的图像显示方式。"
+        ],
+        "propertyButtons": [
+          {
+            "text": "填充",
+            "ariaLabel": "填充",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 255,
+              "w": 34,
+              "h": 27
+            }
+          },
+          {
+            "text": "",
+            "ariaLabel": "",
+            "role": "",
+            "rect": {
+              "x": 2480,
+              "y": 255,
+              "w": 44,
+              "h": 24
+            }
+          },
+          {
+            "text": "背景图像",
+            "ariaLabel": "背景图像",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 287,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "无",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 287,
+              "w": 140,
+              "h": 24
+            }
+          },
+          {
+            "text": "图像位置",
+            "ariaLabel": "图像位置",
+            "role": "",
+            "rect": {
+              "x": 2223,
+              "y": 319,
+              "w": 58,
+              "h": 27
+            }
+          },
+          {
+            "text": "匹配度",
+            "ariaLabel": "",
+            "role": "button",
+            "rect": {
+              "x": 2384,
+              "y": 319,
+              "w": 140,
+              "h": 24
+            }
+          }
+        ]
+      }
+    }
+  },
+  "errors": []
+}

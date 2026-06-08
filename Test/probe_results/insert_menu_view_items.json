@@ -1,0 +1,1423 @@
+{
+  "found": true,
+  "count": 109,
+  "items": [
+    {
+      "tag": "DIV",
+      "cls": "root_gyab9g",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 250,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "background_g8m8cp ba-Tree-Root root-413",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 250,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "innerRoot-414",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 250,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-FocusZone css-247 focusZone-172",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 250,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "containerStyle-323 containerHeightStyle-324 scrollView-187",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 250,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "viewStyle-326 viewHeightStyle-327 scrollViewInnerRoot-188",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 250,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List list-416",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "tree",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 238,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-surface",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器布局输入显示媒体图表形状人工智能混合现实",
+      "role": "presentation",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 238,
+        "h": 559
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-page",
+      "text": "推荐文本按钮卡片图文本输入组合框数据网格预览窗体垂直库网格容器",
+      "role": "presentation",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 238,
+        "h": 320
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "推荐",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 60,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "推荐",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 60,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIconExpanded-447",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 71,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "推荐",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 66,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "文本",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 92,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "文本",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 92,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "文本",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 92,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "文本",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 93,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "文本",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 93,
+        "w": 28,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "文本",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 93,
+        "w": 28,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "按钮",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 124,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "按钮",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 124,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "按钮",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 124,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "按钮",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 125,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "按钮",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 125,
+        "w": 28,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "按钮",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 125,
+        "w": 28,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "卡片图",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 156,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "卡片图",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 156,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "卡片图",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 156,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "卡片图",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 157,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "卡片图",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 157,
+        "w": 42,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "卡片图",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 157,
+        "w": 42,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "文本输入",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 188,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "文本输入",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 188,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "文本输入",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 188,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "文本输入",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 189,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "文本输入",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 189,
+        "w": 56,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "文本输入",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 189,
+        "w": 56,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "组合框",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 220,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "组合框",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 220,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "组合框",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 220,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "组合框",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 221,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "组合框",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 221,
+        "w": 42,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "组合框",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 221,
+        "w": 42,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "数据网格预览",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 252,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "数据网格预览",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 252,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "数据网格预览",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 252,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "数据网格预览",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 253,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "数据网格预览",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 253,
+        "w": 90,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "数据网格",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 253,
+        "w": 56,
+        "h": 30
+      }
+    },
+    {
+      "tag": "SPAN",
+      "cls": "fui-Text ___1kckfhe fk6fouc f13mqy1h fytdu2e fl43uef fpgzoln f1w7gpdv f6juhto f1",
+      "text": "预览",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 102,
+        "y": 262,
+        "w": 28,
+        "h": 14
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "窗体",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 284,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "窗体",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 284,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "窗体",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 284,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "窗体",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 285,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "窗体",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 285,
+        "w": 28,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "窗体",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 285,
+        "w": 28,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "垂直库",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 316,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "垂直库",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 316,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "垂直库",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 316,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "垂直库",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 317,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "垂直库",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 317,
+        "w": 42,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "垂直库",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 317,
+        "w": 42,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "网格容器",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 348,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "网格容器",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 348,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ba-Tree-Node itemIsNotSelected-442",
+      "text": "网格容器",
+      "role": "treeitem",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 348,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemContainer_1hbcmbo",
+      "text": "网格容器",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 349,
+        "w": 194,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-Stack css-449",
+      "text": "网格容器",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 349,
+        "w": 56,
+        "h": 30
+      }
+    },
+    {
+      "tag": "LABEL",
+      "cls": "ms-Label itemLabel_umno17 root-451",
+      "text": "网格容器",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 40,
+        "y": 349,
+        "w": 56,
+        "h": 30
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-page",
+      "text": "布局输入显示媒体图表形状人工智能混合现实经典经典图标",
+      "role": "presentation",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 0,
+        "y": 380,
+        "w": 238,
+        "h": 330
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "布局",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 380,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "布局",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 380,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 391,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "布局",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 386,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "输入",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 412,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "输入",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 412,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 423,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "输入",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 418,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "显示",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 444,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "显示",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 444,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 455,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "显示",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 450,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "媒体",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 476,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "媒体",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 476,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 487,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "媒体",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 482,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "图表",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 508,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "图表",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 508,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 519,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "图表",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 514,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "形状",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 540,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "形状",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 540,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 551,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "形状",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 546,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "人工智能",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 572,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "人工智能",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 572,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 583,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "人工智能",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 578,
+        "w": 69,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "混合现实",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 604,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 604,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 615,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "混合现实",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 610,
+        "w": 69,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "经典",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 636,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "经典",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 636,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 647,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "经典",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 642,
+        "w": 37,
+        "h": 20
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ms-List-cell",
+      "text": "经典图标",
+      "role": "presentation",
+      "dataAutomationId": "ListCell",
+      "rect": {
+        "x": 0,
+        "y": 668,
+        "w": 238,
+        "h": 32
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "item_hcfd09",
+      "text": "经典图标",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 8,
+        "y": 668,
+        "w": 222,
+        "h": 32
+      }
+    },
+    {
+      "tag": "I",
+      "cls": "expandIcon-453",
+      "text": "",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 17,
+        "y": 679,
+        "w": 10,
+        "h": 10
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "itemCategoryLabel_1bm6yx3",
+      "text": "经典图标",
+      "role": "",
+      "dataAutomationId": "",
+      "rect": {
+        "x": 35,
+        "y": 674,
+        "w": 69,
+        "h": 20
+      }
+    }
+  ]
+}

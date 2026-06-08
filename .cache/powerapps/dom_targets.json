@@ -1,0 +1,19 @@
+{
+  "formula_bar::view_lines": {
+    "device_pixel_ratio": 1,
+    "iframe_offset": {
+      "x": 0.0,
+      "y": 48.0
+    },
+    "kind": "formula_bar",
+    "label": "formula_bar",
+    "matched_text": "\"按钮\"",
+    "name": "formula_bar::view_lines",
+    "selector": "#formulaBarContainer .view-lines",
+    "updated_at": "2026-06-08T15:10:24+00:00",
+    "viewport_height": 1308,
+    "viewport_width": 2552,
+    "x": 1442.4,
+    "y": 113.0
+  }
+}

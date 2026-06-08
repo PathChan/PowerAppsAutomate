@@ -1,233 +1,290 @@
-============================================================
-  主 Agent 启动
-============================================================
-目标: 帮我创建一个叫做“点我一下”的按钮
-INFO     [root] PowerApps hard rules injected into system prompt.
-INFO     [service] Using anonymized telemetry, see https://docs.browser-use.com/development/monitoring/telemetry.
-WARNING  [Agent] ⚠️ DeepSeek models do not support use_vision=True yet. Setting use_vision=False for now...
-INFO     [Agent] 💬 Saving conversation to ~\Desktop\Codes\PowerAppsAutomate\mocProcessing_conversation.json
-INFO     [root] Coordinate clicking enabled for all models.
-INFO     [Agent] 🎯 Task: 首先导航到以下 Power Apps 网址（如果尚未打开）：https://make.powerapps.com/e/Default-981b0d27-31e4-41e1-8295-46904d1bce63/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2Fdfb51063-213a-4a84-936f-393b7a31344b
+PS C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\Test> uv run .\test_visual_formula_click.py
+INFO     [test_visual_formula_click] Opening PowerApps URL with persistent profile: C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\browser_profile
+INFO     [test_visual_formula_click] Browser opened. Please finish login / close popups / navigate to the desired app state manually.
+Ready to test visual click? Press Enter here after the page is ready...WARNING  [BrowserSession] [SessionManager] Agent focus target 9B9DB9F2... detached! Current focus: None (already cleared). Auto-recovering by switching to another target...
+INFO     [BrowserSession] [SessionManager] Switching agent_focus to existing tab 88540298...
+INFO     [BrowserSession] [SessionManager] ✅ Agent focus recovered: 88540298...
+WARNING  [cdp_use.client] Received duplicate response for request 31 - ignoring
 
-用户目标：
-帮我创建一个叫做“点我一下”的按钮
-
-执行前制定的可行性计划：
-帮我创建一个叫做“点我一下”的按钮
-
-语言要求：
-- 你的 Eval（对上一步的评估）、Memory（记忆）、Next goal（下一步目标）必须使用中文输出。
-- 与用户交互时也使用中文。
-
-执行规则：
-- 将计划作为参考，不要把它当作当前页面状态的证明。
-- 保留你自己的 browser-use AI 判断力，用于定位元素和决定下一步的点击/输入动作。
-- 由于 Power Apps 使用动态 DOM 结构，请谨慎操作。
-- 优先使用可见的标签、无障碍名称、附近文本、语义角色提示和视觉上下文。
-- 如果页面状态与计划不一致，重新观察并调整。
-- 如果点击/输入失败，重新观察页面并说明是什么阻止了操作。
-- 不要关闭浏览器。
-
-参考经验（经验库当前内容）：
-<experience>
-你有一个经验系统。通过维护 <experience.md> 文件来积累每次任务的经验教训。
-
-**什么是经验**：
-- 完成类似任务时学到的有效步骤和模式
-- 遇到过的陷阱和解决方法
-- 特定网站/页面的操作技巧（如登录方式、表单填写注意事项）
-- 对任务效率有幫助的通用规则
-
-**如何使用经验**：
-- 每次执行任务前，阅读 <experience.md> 中的历史经验
-- 将相关经验应用到当前任务中
-- 新学到的经验及时追加到 <experience.md>
-
-**经验维护规则**：
-- 格式：每一条经验用 `- [经验分类] 具体描述` 的格式
-- 分类包括：`[页面操作经验]`、`[编码经验]`、`[表格操作经验]` 等
-- 避免重复记录相同的经验
-- 优先记录可复用的经验，而非一次性操作细节
-
-## 积累的经验
-
-### PowerApps 公式编辑器（Monaco）操作
-
-⚠️ **核心事实**：PowerApps 公式栏用 Monaco Editor，其隐藏 `<textarea>` 无法通过任何 CDP mouse event / focus 直接激活。
-**唯一可靠的聚焦方式** = 点击 `#formulaBarContainer > button`。
-
-**代码已自动处理：** `default_action_watchdog.py` 在每次 CDP 点击后，都会自动检测页面是否有
-`#formulaBarContainer > button`，如果有就点击它来触发 Monaco 焦点转移。
-所以你用普通 `click(index)` 点击任何元素，公式栏都会自动获得焦点。
-
-#### 标准的 Monaco 输入流程（AI 必须遵循）
-
-1. 在 DOM 快照中找到 `#formulaBarContainer` 内部的 `[index]` 按钮元素
-2. `click(index)` — 点击公式栏按钮，代码会自动触发 Monaco 聚焦
-3. `input_text(index, text="公式内容")` — 输入到已聚焦的 Monaco textarea
-
-⚠️ `input_text(clear=True)` 无法清除 Monaco 已有内容（textarea 是隐藏的）。如需清空，用 evaluate：
-```
-evaluate(js="document.querySelector('#formulaBarContainer > button')?.click();")
-```
-然后在同一轮 action 中用 `input_text(text="新内容", clear=False)` 输入。
-
-#### 🚫 禁止事项（已验证全部无效）
-- ❌ 禁止直接 click() 在 `.overflow-guard` 或 `.monaco-editor` 上（CDP mouse event 不行）
-- ❌ 禁止 evaluate 调 `monaco.editor.getEditors()`（PowerApps 的 Monaco 实例无法访问）
-- ❌ 禁止 `.inputarea.focus()`（隐藏 textarea 不受理 CDP focus）
-- ❌ 禁止坐标点击 Monaco 区域（框能完美覆盖但点不进去）
-
-### PowerApps 属性搜索框操作
-
-- [页面操作经验] 使用 `document.querySelector("#powerapps-property-combo-box")` 找到属性搜索输入框
-- 不要点右边的下拉箭头，直接输入属性英文名称（如 `Width`、`Height`、`X`、`Y`、`Text`）
-
-- 输入后等待下拉建议出现，点击正确的建议项（会在 DOM 快照中显示为新的 *[index] 元素）
-- 选中后公式编辑器会自动加载该属性的当前值
-- [页面操作经验] 访问需要Microsoft认证的Power Apps编辑器前，必须先完成登录步骤（提供凭据或使用已有的登录会话），否则会被重定向到登录页面而无法访问。
-- [页面操作经验] 等待PowerApps画布编辑器加载完成时，应通过检测左侧树视图（如树节点元素）、顶部工具栏（如命令栏）和中间画布区域（如画布容器）的存在来判断，而不是仅依赖超时休眠，避免因网络延迟导致后续操作失败。
-- [页面操作经验] 在PowerApps编辑器中点击顶部功能选项卡（如“插入”）前，需先等待画布编辑器完全加载（检测树视图节点、顶部命令栏和画布容器），然后从DOM快照中找到选项卡对应的[index]元素后直接click，避免因未加载或选择错误元素导致操作失败。
-- [页面操作经验] 在PowerApps编辑器的“插入”面板中查找控件时，先通过DOM快照找到并点击“插入”选项卡，等待面板内容加载完成后，再在DOM快照中找到对应控件（如“按钮”）的[index]元素进行单击，避免因 面板未展开或控件未加载导致点击失败。
-- [页面操作经验] 在PowerApps画布应用编辑页面，系统不会自动添加默认按钮到画布中央，应避免依赖此等待；需通过点击“插入”选项卡并选择相应控件来主动添加。
-- [页面操作经验] 在PowerApps画布中选中已有控件时，应先确保画布加载完成，然后在DOM快照中找到该控件的可交互元素（通常带有`control`或控件类型类名），直接click即可；如果单击后右侧属性面板未更 新，可先点击画布空白区域再单击控件，或使用evaluate执行`canvasApp.selectControl(controlName)`等方法确保选中。
-- [页面操作经验] 在PowerApps右侧属性面板中操作属性值时，应先通过DOM快照找到该属性对应的公式编辑器区域（`.monaco-editor`或`.overflow-guard`元素），然后复用Monaco编辑器操作策略（点击聚焦后输入或用评估脚本设置值），而非寻找独立的输入框。
-- [页面操作经验] 在PowerApps公式编辑器中，使用`evaluate`执行JavaScript（`editor.setValue('')`再`editor.setValue('新值')`）来清空并设置文本比`input_text(clear=True)`更可靠，因为Monaco编辑器无法通过CDP清除已有内容。
-- [页面操作经验] 在PowerApps编辑器中，若使用`input_text`在非Monaco输入框（如属性值输入框）输入文本后，需按Enter或点击画布空白处来确认提交，否则输入内容可能不会被保存。
-- [页面操作经验] 在PowerApps编辑器中，若Monaco编辑器位于跨域iframe中导致evaluate查询失败，应使用点击`.overflow-guard`索引元素聚焦后，立即`input_text`输入（不清除），再点击画布空白处或按Enter提交，避免输入未提交导致值未更新。
-- [页面操作经验] 确认PowerApps画布编辑器加载完成时，应优先检测主容器元素（如 `.appc-canvas-editor`）的DOM存在性，而非依赖固定超时，避免因网络延迟导致后续操作失败。
-- [页面操作经验] 点击PowerApps顶部“插入”选项卡后，不要立即执行后续点击，应等待插入面板中的具体控件列表（如“按钮”等）出现在DOM快照中，否则可能因面板未完全加载导致后续操作失败。
-- [页面操作经验] 在PowerApps编辑器的插入面板中，点击“插入”选项卡后，必须等待插入面板内的具体控件列表（例如“按钮”元素）出现在DOM快照中，再进行点击，否则因面板未加载完整会导致点击失败。     
-</experience>
-INFO     [Agent] 📦 Newer version available: 0.12.9 (current: 0.1.0). Upgrade with: uv add browser-use==0.12.9
-INFO     [Agent] Starting a browser-use agent with version 0.1.0, with provider=openai and model=DeepSeek-V4-Flash
-ERROR    [BrowserSession] 🚌 [BrowserSession.on_BrowserStartEvent(#bbe8)]           ❌ Failed (0.12s): ModuleNotFoundError: No module named 'mocProcessing.browser.video_recorder'
-ERROR    [BrowserSession] 🚌 [BrowserSession.on_BrowserStartEvent(#bbe8)]           ❌ CDP connected but failed to re-create CDP session after error "ModuleNotFoundError: No module named 'mocProcessing.browser.video_recorder'" in on_BrowserStartEvent(BrowserStartEvent#bbe8): due to AssertionError: Root CDP client not initialized
-
-ERROR    [bubus] ❌ EventBus_2c49e102🟢(⏳ 0 | ▶️ 0 | ✅ 1 ➡️ 9 👂) Error in event handler mocProcessing.browser.watchdog_base.BrowserSession.on_BrowserStartEvent(?▶ BrowserStartEvent#bbe8 8 ✅) ->
-ModuleNotFoundError(No module named 'mocProcessing.browser.video_recorder')
-Traceback (most recent call last):
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\service.py", line 1128, in execute_handler
-    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\tasks.py", line 489, in wait_for
-    return fut.result()
-           ^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\watchdog_base.py", line 153, in unique_handler
-    result = await actual_handler(event)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\observability.py", line 73, in async_wrapper
-    return await func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 722, in on_BrowserStartEvent
-    await self.attach_all_watchdogs()
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 1560, in attach_all_watchdogs
-    from mocProcessing.browser.watchdogs.recording_watchdog import RecordingWatchdog
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\watchdogs\recording_watchdog.py", line 14, in <module>
-    from mocProcessing.browser.video_recorder import VideoRecorderService
-ModuleNotFoundError: No module named 'mocProcessing.browser.video_recorder'
-
-ERROR    [Agent] Agent run failed with exception: No module named 'mocProcessing.browser.video_recorder'
-Traceback (most recent call last):
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\agent\service.py", line 2538, in run
-    await self.browser_session.start()
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\observability.py", line 73, in async_wrapper
-    return await func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 658, in start
-    await start_event.event_result(raise_if_any=True, raise_if_none=False)
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 574, in event_result
-    valid_results = await self.event_results_filtered(
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 516, in event_results_filtered
-    raise original_error
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 490, in event_results_filtered
-    await event_result
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 889, in wait_for_handler_to_complete_and_return_result
-    raise self.error if isinstance(self.error, BaseException) else Exception(self.error)  # pyright: ignore[reportUnnecessaryIsInstance]
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\service.py", line 1070, in _execute_handlers
-    await self.execute_handler(event, handler, timeout=timeout)
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\service.py", line 1128, in execute_handler
-    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\tasks.py", line 489, in wait_for
-    return fut.result()
-           ^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\watchdog_base.py", line 153, in unique_handler
-    result = await actual_handler(event)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\observability.py", line 73, in async_wrapper
-    return await func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 722, in on_BrowserStartEvent
-    await self.attach_all_watchdogs()
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 1560, in attach_all_watchdogs
-    from mocProcessing.browser.watchdogs.recording_watchdog import RecordingWatchdog
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\watchdogs\recording_watchdog.py", line 14, in <module>
-    from mocProcessing.browser.video_recorder import VideoRecorderService
-ModuleNotFoundError: No module named 'mocProcessing.browser.video_recorder'
-ERROR    [root] Power Apps automation failed for this goal.
-Traceback (most recent call last):
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\agent\service.py", line 2649, in run
-    raise e
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\agent\service.py", line 2538, in run
-    await self.browser_session.start()
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\observability.py", line 73, in async_wrapper
-    return await func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 658, in start
-    await start_event.event_result(raise_if_any=True, raise_if_none=False)
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 574, in event_result
-    valid_results = await self.event_results_filtered(
-                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 516, in event_results_filtered
-    raise original_error
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 490, in event_results_filtered
-    await event_result
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\models.py", line 889, in wait_for_handler_to_complete_and_return_result
-    raise self.error if isinstance(self.error, BaseException) else Exception(self.error)  # pyright: ignore[reportUnnecessaryIsInstance]
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\service.py", line 1070, in _execute_handlers
-    await self.execute_handler(event, handler, timeout=timeout)
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\.venv\Lib\site-packages\bubus\service.py", line 1128, in execute_handler
-    result_value: Any = await asyncio.wait_for(handler_task, timeout=event_result.timeout)
-                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\asyncio\tasks.py", line 489, in wait_for
-    return fut.result()
-           ^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\watchdog_base.py", line 153, in unique_handler
-    result = await actual_handler(event)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\observability.py", line 73, in async_wrapper
-    return await func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 722, in on_BrowserStartEvent
-    await self.attach_all_watchdogs()
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\session.py", line 1560, in attach_all_watchdogs
-    from mocProcessing.browser.watchdogs.recording_watchdog import RecordingWatchdog
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\browser\watchdogs\recording_watchdog.py", line 14, in <module>
-    from mocProcessing.browser.video_recorder import VideoRecorderService
-ModuleNotFoundError: No module named 'mocProcessing.browser.video_recorder'
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\main.py", line 361, in main
-    await run_goal(goal, llm, browser_session, power_apps_url, max_steps)
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\main.py", line 316, in run_goal
-    result = await agent.run(max_steps=max_steps)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\observability.py", line 73, in async_wrapper
-    return await func(*args, **kwargs)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\utils.py", line 425, in wrapper
-    result = await func(*args, **kwargs)
-             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\PXNC\Desktop\Codes\PowerAppsAutomate\mocProcessing\agent\service.py", line 2657, in run
-    await self.token_cost_service.log_usage_summary()
-TypeError: object NoneType can't be used in 'await' expression
-
-Automation failed for this goal. The console is still running; check the stack trace and the visible browser window, then enter the next goal.
-
-PowerAppsAgent>
+INFO     [test_visual_formula_click] Waiting for CDP to be stable after manual login/navigation...
+INFO     [test_visual_formula_click] CDP is ready.
+INFO     [test_visual_formula_click] Pre-click activeElement diag: {'activeTag': 'BODY', 'activeClass': 'shell-animations fui-FluentProvider1 enable-motion', 'activeId': 'rootBody', 'isInputArea': False, '_ctx': 'isolatedWorld:991EFC96'}
+INFO     [test_visual_formula_click] All CDP targets:
+[
+  {
+    "targetId": "88540298034E790F21A7A3CA9EBFABE0",
+    "type": "page",
+    "url": "https://make.powerapps.com/e/Default-981b0d27-31e4-41e1-8295-46904d1bce63/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2Fdfb51063-213a-4a84-936f-393b7a31344b",
+    "title": "Power Apps Studio  |  TEST1 (编辑)",
+    "attached": true,
+    "browserContextId": "D741AEC7F50A2C455270AA3BE64B5996",
+    "openerId": null
+  },
+  {
+    "targetId": "3486614A5CE2CF5B647E5E5563A1A291",
+    "type": "iframe",
+    "url": "https://webshell.suite.office.com/iframe/TokenFactoryIframe?origin=https%3A%2F%2Fmake.powerapps.com&shsid=bc5d40e9-24aa-4e9d-ae62-3db0fdb1e3cb&apiver=oneshell&cshver=1.20260601.1.0&upn=PXNC%40nnit.com",
+    "title": "https://webshell.suite.office.com/iframe/TokenFactoryIframe?origin=https%3A%2F%2Fmake.powerapps.com&shsid=bc5d40e9-24aa-4e9d-ae62-3db0fdb1e3cb&apiver=oneshell&cshver=1.20260601.1.0&upn=PXNC%40nnit.com",
+    "attached": true,
+    "browserContextId": "D741AEC7F50A2C455270AA3BE64B5996",
+    "openerId": null
+  }
+]
+INFO     [test_visual_formula_click] Main page frame tree:
+{
+  "frameTree": {
+    "frame": {
+      "id": "88540298034E790F21A7A3CA9EBFABE0",
+      "loaderId": "4205E5D125BD931C57A6A76995E1D70B",
+      "url": "https://make.powerapps.com/e/Default-981b0d27-31e4-41e1-8295-46904d1bce63/canvas/?action=edit&app-id=%2Fproviders%2FMicrosoft.PowerApps%2Fapps%2Fdfb51063-213a-4a84-936f-393b7a31344b",
+      "domainAndRegistry": "powerapps.com",
+      "securityOrigin": "https://make.powerapps.com",
+      "securityOriginDetails": {
+        "isLocalhost": false
+      },
+      "mimeType": "text/html",
+      "adFrameStatus": {
+        "adFrameType": "none"
+      },
+      "secureContextType": "Secure",
+      "crossOriginIsolatedContextType": "NotIsolated",
+      "gatedAPIFeatures": []
+    },
+    "childFrames": [
+      {
+        "frame": {
+          "id": "611E5222588298479DA0F67425088E97",
+          "parentId": "88540298034E790F21A7A3CA9EBFABE0",
+          "loaderId": "61DDAB0EB032775B7352F19E562C2BFE",
+          "name": "preloadStudio",
+          "url": "https://authoring.eu-il103.gateway.prod.island.powerapps.com/embed/?preload=prefetch",
+          "domainAndRegistry": "powerapps.com",
+          "securityOrigin": "https://authoring.eu-il103.gateway.prod.island.powerapps.com",
+          "securityOriginDetails": {
+            "isLocalhost": false
+          },
+          "mimeType": "text/html",
+          "adFrameStatus": {
+            "adFrameType": "none",
+            "explanations": []
+          },
+          "secureContextType": "Secure",
+          "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+          "gatedAPIFeatures": []
+        }
+      },
+      {
+        "frame": {
+          "id": "991EFC9643850F6E986376F28CD068A3",
+          "parentId": "88540298034E790F21A7A3CA9EBFABE0",
+          "loaderId": "ABCE11F24A80F9AC5982B6226611455F",
+          "name": "EmbeddedStudio",
+          "url": "https://authoring.eu-il103.gateway.prod.island.powerapps.com/v3.26054.13.371370715/embed/",
+          "domainAndRegistry": "powerapps.com",
+          "securityOrigin": "https://authoring.eu-il103.gateway.prod.island.powerapps.com",
+          "securityOriginDetails": {
+            "isLocalhost": false
+          },
+          "mimeType": "text/html",
+          "adFrameStatus": {
+            "adFrameType": "none",
+            "explanations": []
+          },
+          "secureContextType": "Secure",
+          "crossOriginIsolatedContextType": "NotIsolatedFeatureDisabled",
+          "gatedAPIFeatures": []
+        }
+      }
+    ]
+  }
+}
+INFO     [test_visual_formula_click] Resolved Studio frameId: 991EFC9643850F6E986376F28CD068A3
+INFO     [test_visual_formula_click] Pre-click DOM inspect (studio context):
+{
+  "url": "https://authoring.eu-il103.gateway.prod.island.powerapps.com/v3.26054.13.371370715/embed/",
+  "viewport": {
+    "w": 1401,
+    "h": 827,
+    "dpr": 1
+  },
+  "hasMonacoGlobal": false,
+  "monacoEditorsCount": null,
+  "probeHits": {
+    "#formulaBarContainer": [
+      {
+        "tag": "DIV",
+        "id": "formulaBarContainer",
+        "cls": "formulaBarContainer_wq4rc",
+        "rect": {
+          "x": 0,
+          "y": 44,
+          "w": 1401,
+          "h": 41
+        }
+      }
+    ],
+    "[data-control-name=\"formulaBar\"]": [],
+    "[data-control-name=\"FormulaBar\"]": [],
+    ".formula-bar": [],
+    "#formula-bar": [],
+    "[aria-label*=\"formula\" i]": [],
+    "[aria-label*=\"公式\" i]": [
+      {
+        "tag": "DIV",
+        "id": "formulabar",
+        "cls": " formulaBar_4pb3um formulaBarEditor_180503v",
+        "rect": {
+          "x": 301,
+          "y": 44,
+          "w": 1058,
+          "h": 32
+        }
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "cls": "___180d71l fly5x3f fre7gi1 f1358rze fqdk4by f1rvrf73",
+        "rect": {
+          "x": 302,
+          "y": 45,
+          "w": 1058,
+          "h": 30
+        }
+      },
+      {
+        "tag": "TEXTAREA",
+        "id": null,
+        "cls": "inputarea monaco-mouse-cursor-text mousetrap UFBElement block-undo-redo",
+        "rect": {
+          "x": 374,
+          "y": 45,
+          "w": 973,
+          "h": 1
+        }
+      },
+      {
+        "tag": "DIV",
+        "id": "OnHidden_AdvancedPanelEditor",
+        "cls": "editorBoundary_1k9qylb-o_O-plainTextEditor_74pznt",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "DIV",
+        "id": "OnVisible_AdvancedPanelEditor",
+        "cls": "editorBoundary_1k9qylb-o_O-plainTextEditor_74pznt",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      }
+    ],
+    "[data-automation-id*=\"formula\" i]": [],
+    "[role=\"textbox\"]": [
+      {
+        "tag": "TEXTAREA",
+        "id": null,
+        "cls": "inputarea monaco-mouse-cursor-text mousetrap UFBElement block-undo-redo",
+        "rect": {
+          "x": 374,
+          "y": 45,
+          "w": 973,
+          "h": 1
+        }
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "cls": "pa-selection-tree-row-name ___1x4r2vi fqerorx f1neuvcm f1rmlqtg fz5stix f6dzj5z fs9fzeb fy9rknc f1062oeo f1p9o1ba f1sil6",
+        "rect": {
+          "x": 114,
+          "y": 249,
+          "w": 149,
+          "h": 20
+        }
+      },
+      {
+        "tag": "DIV",
+        "id": null,
+        "cls": "pa-selection-tree-row-name ___1x4r2vi fqerorx f1neuvcm f1rmlqtg fz5stix f6dzj5z fs9fzeb fy9rknc f1062oeo f1p9o1ba f1sil6",
+        "rect": {
+          "x": 114,
+          "y": 283,
+          "w": 149,
+          "h": 20
+        }
+      },
+      {
+        "tag": "SPAN",
+        "id": null,
+        "cls": "faceplateContentContainer_1ei6pox",
+        "rect": {
+          "x": 1250,
+          "y": 288,
+          "w": 138,
+          "h": 22
+        }
+      },
+      {
+        "tag": "SPAN",
+        "id": null,
+        "cls": "faceplateContentContainer_1ei6pox",
+        "rect": {
+          "x": 1250,
+          "y": 320,
+          "w": 138,
+          "h": 22
+        }
+      }
+    ],
+    "[contenteditable=\"true\"]": [],
+    ".monaco-editor": [
+      {
+        "tag": "DIV",
+        "id": null,
+        "cls": "monaco-editor no-user-select  showUnused showDeprecated vs",
+        "rect": {
+          "x": 302,
+          "y": 45,
+          "w": 1057,
+          "h": 30
+        }
+      }
+    ],
+    "textarea.inputarea": [
+      {
+        "tag": "TEXTAREA",
+        "id": null,
+        "cls": "inputarea monaco-mouse-cursor-text mousetrap UFBElement block-undo-redo",
+        "rect": {
+          "x": 374,
+          "y": 45,
+          "w": 973,
+          "h": 1
+        }
+      }
+    ],
+    "iframe": []
+  },
+  "clickChain": [],
+  "hitContainerTree": null,
+  "iframes": [],
+  "_ctx": "isolatedWorld:991EFC96"
+}
+INFO     [test_visual_formula_click] [A] Trying focus via Monaco API (window.monaco.editor.getEditors)...
+INFO     [test_visual_formula_click] [A] Monaco API focus result: {'focused': False, 'reason': 'no monaco instance', '_ctx': 'isolatedWorld:991EFC96'}
+INFO     [test_visual_formula_click] [B] Trying focus via DOM pointer/mouse event dispatch...
+INFO     [test_visual_formula_click] [B] Dispatch focus result: {'focused': True, 'strategy': 'dispatch on view-lines monaco-mouse-cursor-text', 'activeTag': 'TEXTAREA', 'activeClass': 'inputarea monaco-mouse-cursor-text mousetrap UFBElement block-undo-redo', '_ctx': 'isolatedWorld:991EFC96'}
+INFO     [test_visual_formula_click] Attempting to set test formula via Monaco API: '"hello from automate"'
+INFO     [test_visual_formula_click] setValue result: {'ok': False, 'reason': 'no monaco instance', '_ctx': 'isolatedWorld:991EFC96'}
+INFO     [test_visual_formula_click] Falling back to CDP keyboard input (textarea is focused)...
+INFO     [test_visual_formula_click] Sent text via CDP Input.insertText
+INFO     [test_visual_formula_click] Final activeElement diag: {'activeTag': 'TEXTAREA', 'activeClass': 'inputarea monaco-mouse-cursor-text mousetrap UFBElement block-undo-redo', 'activeId': '', 'isInputArea': True, '_ctx': 'isolatedWorld:991EFC96'}
+INFO     [test_visual_formula_click] Done. Browser will stay open for manual inspection.
+Check whether the formula editor is focused / value applied. Press Enter to close browser...
