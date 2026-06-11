@@ -1,0 +1,22 @@
+{
+  "propertyName": "FontWeight",
+  "formula": "FontWeight.Bold",
+  "steps": [
+    {
+      "name": "get_property_options(38 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(FontWeight)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(FontWeight.Bold)",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

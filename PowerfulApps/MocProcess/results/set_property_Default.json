@@ -1,0 +1,22 @@
+{
+  "propertyName": "Default",
+  "formula": "varPartName",
+  "steps": [
+    {
+      "name": "get_property_options(44 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Default)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(varPartName)",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

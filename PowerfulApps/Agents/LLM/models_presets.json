@@ -1,0 +1,54 @@
+{
+  "_schema_version": 1,
+  "_comment": "LLM 模型预设配置。default=true 的配置为启动默认项，仅一个。",
+  "presets": {
+    "deepseek": {
+      "deepseek-flash": {
+        "name": "deepseek-flash",
+        "manufacturer": "deepseek",
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-v4-flash",
+        "api_key": "sk-aae2ad6c608649e5a9cd566f5ac272be",
+        "thinking": true,
+        "reasoning_effort": "high",
+        "api_type": "openai-compatible",
+        "default": false
+      },
+      "deepseek-pro": {
+        "name": "deepseek-pro",
+        "manufacturer": "deepseek",
+        "base_url": "https://api.deepseek.com",
+        "model": "deepseek-v4-pro",
+        "api_key": "sk-aae2ad6c608649e5a9cd566f5ac272be",
+        "thinking": true,
+        "reasoning_effort": "high",
+        "api_type": "openai-compatible",
+        "default": false
+      }
+    },
+    "volcengine": {
+      "volcengine-flash": {
+        "name": "volcengine-dsflash",
+        "manufacturer": "volcengine",
+        "base_url": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "model": "DeepSeek-V4-Flash",
+        "api_key": "ark-fe48144c-aa20-404e-a1f8-f0b7ba0c4351-e95b0",
+        "thinking": false,
+        "reasoning_effort": null,
+        "api_type": "openai-compatible",
+        "default": true
+      },
+      "volcengine-pro": {
+        "name": "volcengine-dspro",
+        "manufacturer": "volcengine",
+        "base_url": "https://ark.cn-beijing.volces.com/api/coding/v3",
+        "model": "DeepSeek-V4-Pro",
+        "api_key": "ark-fe48144c-aa20-404e-a1f8-f0b7ba0c4351-e95b0",
+        "thinking": false,
+        "reasoning_effort": null,
+        "api_type": "openai-compatible",
+        "default": false
+      }
+    }
+  }
+}

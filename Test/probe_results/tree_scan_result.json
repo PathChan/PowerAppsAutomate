@@ -1,0 +1,79 @@
+{
+  "snapshot": {
+    "items": [
+      {
+        "name": "App",
+        "depth": 0
+      },
+      {
+        "name": "App",
+        "depth": 1
+      },
+      {
+        "name": "App",
+        "depth": 2
+      },
+      {
+        "name": "App",
+        "depth": 3
+      },
+      {
+        "name": "Screen3",
+        "depth": 0
+      },
+      {
+        "name": "Screen3",
+        "depth": 1
+      },
+      {
+        "name": "Screen3",
+        "depth": 2
+      },
+      {
+        "name": "Screen3",
+        "depth": 3
+      }
+    ],
+    "count": 8,
+    "maxDepth": 3
+  },
+  "deep_scan": {},
+  "graph_stats": {
+    "screens": 3,
+    "controls": 0,
+    "edges": 0,
+    "screens_list": [
+      "App",
+      "Screen3",
+      "__unknown__"
+    ]
+  },
+  "graph_json": {
+    "screens": [
+      "App",
+      "Screen3",
+      "__unknown__"
+    ],
+    "nodes": [
+      {
+        "id": "App",
+        "type": "screen",
+        "screen": "",
+        "properties": {}
+      },
+      {
+        "id": "__unknown__",
+        "type": "screen",
+        "screen": "",
+        "properties": {}
+      },
+      {
+        "id": "Screen3",
+        "type": "screen",
+        "screen": "",
+        "properties": {}
+      }
+    ],
+    "edges": []
+  }
+}

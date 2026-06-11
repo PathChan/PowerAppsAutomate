@@ -1,0 +1,22 @@
+{
+  "propertyName": "Placeholder",
+  "formula": "\"请输入备件名称\"",
+  "steps": [
+    {
+      "name": "get_property_options(44 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Placeholder)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(\"请输入备件名称\")",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

@@ -186,52 +186,13 @@ def make_agent(task: str, llm: Any, browser_session: BrowserSession) -> Agent:
     # ── 注入 PowerApps 操作铁律到系统 prompt ──────────────────────
     # 这是硬约束，直接追加到 system prompt 末尾，比 experience.md 优先级更高。
     # 这些规则会影响 Agent 在每个步骤中的决策，必须严格遵守。
-    POWERAPPS_HARD_RULES = """
-<hard_rules>
-## PowerApps 铁律（必须严格遵守，违反会导致操作失败）
-
-### 公式栏编辑器（Monaco）聚焦规则
-PowerApps 的公式栏使用 Monaco Editor，唯一可靠的焦点激活方式是点击公式栏按钮。
-这是经过大量验证的唯一有效方法。
-
-当你需要在公式栏中输入文字时，必须按以下步骤操作：
-1. 在 DOM 快照中找到 `#formulaBarContainer` 内部的 `[index]` 元素（即那个按钮）
-2. click(index) 点击该按钮 — 这会触发 PowerApps 内部逻辑，自动将光标聚焦到 Monaco 编辑器的隐藏 textarea
-3. 然后使用 input_text 输入公式内容
-
-⚠️ 禁止事项（已验证无效）：
-- 禁止直接点击 .overflow-guard 或 .monaco-editor 元素（CDP mouse event 无法触发 Monaco 焦点转移）
-- 禁止使用 evaluate 调用 monaco.editor.getEditors()（PowerApps 的 Monaco 实例无法通过此方式访问）
-- 禁止直接 focus .monaco-editor .inputarea（隐藏 textarea 不受理 CDP focus）
-
-### 输入确认规则
-- 在非 Monaco 输入框输入内容后，必须按 Enter 或点击画布空白处来提交
-- 输入的内容不会自动保存，必须显式确认
-</hard_rules>
-"""
+    POWERAPPS_HARD_RULES = """ """
 
     if supports_parameter(Agent, "extend_system_message"):
         kwargs["extend_system_message"] = POWERAPPS_HARD_RULES
         logging.info("PowerApps hard rules injected into system prompt.")
 
     agent = Agent(**kwargs)
-
-    # ── 挂载自定义 PowerApps 操作 ──────────────────────────────────
-    try:
-        from mocProcessing.tools.action.click_powerapps_ribbon_button import register as _reg_r
-        from mocProcessing.tools.action.click_powerapps_component import register as _reg_c
-        from mocProcessing.tools.action.click_powerapps_property import register as _reg_p
-        from mocProcessing.tools.action.click_by_cached_target import register as _reg_cached
-        from mocProcessing.tools.chain.insert_element_and_funcInput import register as _reg_chain
-
-        _reg_r(agent.tools)
-        _reg_c(agent.tools)
-        _reg_p(agent.tools)
-        _reg_cached(agent.tools)
-        _reg_chain(agent.tools)
-        logging.info("Custom PowerApps actions & chain registered.")
-    except Exception:
-        logging.warning("Failed to register custom PowerApps actions", exc_info=True)
 
     # ── 强制启用坐标点击 ──────────────────────────────────────────
     # browser-use 默认只为 claude-sonnet-4 / gemini-3-pro 等模型启用坐标点击。

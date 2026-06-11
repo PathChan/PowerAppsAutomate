@@ -1,0 +1,22 @@
+{
+  "propertyName": "Fill",
+  "formula": "Color.LightGray",
+  "steps": [
+    {
+      "name": "get_property_options(27 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Fill)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(Color.LightGray)",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

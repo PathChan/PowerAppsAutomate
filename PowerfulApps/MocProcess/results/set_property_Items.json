@@ -1,0 +1,22 @@
+{
+  "propertyName": "Items",
+  "formula": "colSpareParts",
+  "steps": [
+    {
+      "name": "get_property_options(20 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Items)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(colSpareParts)",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

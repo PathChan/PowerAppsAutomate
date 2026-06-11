@@ -13,8 +13,8 @@ from __future__ import annotations
 import json
 import logging
 
-from mocProcessing.browser import BrowserSession
-from mocProcessing.tools.powerapps_chain import execute_in_studio
+from PowerfulApps.Browser.core import BrowserSession
+from PowerfulApps.Browser.cdp.studio_cdp import execute_in_studio
 
 logger = logging.getLogger(__name__)
 

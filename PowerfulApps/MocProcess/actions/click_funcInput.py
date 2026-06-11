@@ -21,13 +21,13 @@ import logging
 
 from pydantic import BaseModel, Field
 
-from mocProcessing.agent.views import ActionResult
-from mocProcessing.browser import BrowserSession
-from mocProcessing.tools.powerapps_chain import (
+from PowerfulApps.Browser.core.action_result import ActionResult
+from PowerfulApps.Browser.core import BrowserSession
+from PowerfulApps.Browser.cdp.studio_cdp import (
 	diagnose_focus_state,
 	focus_formula_editor_via_dispatch,
 )
-from mocProcessing.tools.target_cache import (
+from PowerfulApps.Browser.cdp.moc_target_cache import (
 	click_via_cache,
 	selector_locator,
 )
@@ -71,9 +71,11 @@ async def _focus_via_cache(browser_session: BrowserSession) -> bool:
 			verify=_verify,
 			max_retries=1,
 		)
+		source_text = "缓存" if result.get("source") == "cache" else "重新定位"
+		logger.info("公式栏聚焦结果：来源=%s 成功=%s 目标=%s", source_text, result.get("ok"), result.get("key"))
 		return bool(result.get("ok"))
 	except Exception as e:
-		logger.debug("formula bar cache click failed: %s", e)
+		logger.debug("公式栏缓存点击失败：%s", e)
 		return False
 
 
@@ -89,7 +91,7 @@ async def click_func_input(params: ClickFuncInputParams, browser_session: Browse
 			diag = await diagnose_focus_state(browser_session)
 			return ActionResult(
 				error=(
-					f'PowerApps formula editor focus FAILED. dispatch={focus_result} active={diag}'
+					f'PowerApps 公式编辑器聚焦失败。事件派发结果={focus_result} 当前焦点={diag}'
 				)
 			)
 
@@ -115,11 +117,12 @@ async def click_func_input(params: ClickFuncInputParams, browser_session: Browse
 	# 3) 确认终态
 	final_diag = await diagnose_focus_state(browser_session)
 	preview = params.text if len(params.text) <= 80 else params.text[:77] + '...'
-	source = "cache" if focused else "dispatch"
+	source_text = "缓存" if focused else "事件派发兜底"
+	clear_text = "是" if params.clear_existing else "否"
 	message = (
-		f'Wrote text into PowerApps formula editor (focus_source={source}, '
-		f'length={len(params.text)}, cleared={params.clear_existing}, '
-		f'isInputArea={final_diag.get("isInputArea")}): {preview!r}'
+		f'已写入 PowerApps 公式编辑器（聚焦来源={source_text}，'
+		f'长度={len(params.text)}，写入前清空={clear_text}，'
+		f'是否在输入区={final_diag.get("isInputArea")}）：{preview!r}'
 	)
 	return ActionResult(extracted_content=message, long_term_memory=message)
 

@@ -1,0 +1,22 @@
+{
+  "propertyName": "Text",
+  "formula": "\"出入库管理\"",
+  "steps": [
+    {
+      "name": "get_property_options(38 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Text)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(\"出入库管理\")",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}

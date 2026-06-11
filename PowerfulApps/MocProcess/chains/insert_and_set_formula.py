@@ -22,7 +22,7 @@ from typing import Any
 
 from dotenv import load_dotenv
 
-from mocProcessing.browser import BrowserSession
+from PowerfulApps.Browser.core import BrowserSession
 from PowerfulApps.MocProcess.actions import insert_menu, formula_bar
 from PowerfulApps.MocProcess.actions.click_funcInput import (
     ClickFuncInputParams,
@@ -156,7 +156,7 @@ async def insert_component_and_set_formula(
     report_path = out_dir / f"insert_{component}_{property_name}.json"
     report_path.write_text(json.dumps(report, ensure_ascii=False, indent=2, default=str), encoding="utf-8")
     report["reportPath"] = str(report_path)
-    logger.info("Report saved: %s", report_path)
+    logger.info("报告已保存：%s", report_path)
 
     return report
 

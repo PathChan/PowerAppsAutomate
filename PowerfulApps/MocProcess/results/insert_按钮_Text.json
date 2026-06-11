@@ -1,7 +1,7 @@
 {
   "component": "按钮",
   "propertyName": "Text",
-  "formula": "\"点我一下就删除\"",
+  "formula": "\"点我一下增加\"",
   "steps": [
     {
       "name": "click_ribbon_insert",
@@ -24,7 +24,7 @@
       "detail": ""
     },
     {
-      "name": "type_formula(\"点我一下就删除\")",
+      "name": "type_formula(\"点我一下增加\")",
       "success": true,
       "detail": ""
     }

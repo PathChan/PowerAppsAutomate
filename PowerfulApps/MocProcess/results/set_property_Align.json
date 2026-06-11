@@ -1,0 +1,22 @@
+{
+  "propertyName": "Align",
+  "formula": "Align.Center",
+  "steps": [
+    {
+      "name": "get_property_options(38 options)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "select_property(Align)",
+      "success": true,
+      "detail": ""
+    },
+    {
+      "name": "type_formula(Align.Center)",
+      "success": true,
+      "detail": ""
+    }
+  ],
+  "success": true
+}
